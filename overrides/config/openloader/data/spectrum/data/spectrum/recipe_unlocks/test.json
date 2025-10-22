@@ -1,0 +1,10 @@
+{
+    "type": "spectrum:recipe_unlock",
+    "unlock": "spectrum:milestones/unlock_overenchanting_with_enchanter",
+    "conditions": [
+      {
+        "type": "spectrum:has_item",
+        "item": "spectrum:enchanter"
+      }
+    ]
+  }

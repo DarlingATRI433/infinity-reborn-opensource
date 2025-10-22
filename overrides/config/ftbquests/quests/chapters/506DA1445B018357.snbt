@@ -1,0 +1,1123 @@
+{
+	id: "506DA1445B018357"
+	group: "0B54634113ED2BBC"
+	order_index: 1
+	filename: "506DA1445B018357"
+	title: "光谱世界"
+	icon: "spectrum:manual"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.0d
+			y: -2.0d
+			subtitle: "多看书和进度,这任务并不完善"
+			description: ["本mod的指导书。"]
+			dependencies: ["1D26B4EA81538C0A"]
+			dependency_requirement: "one_completed"
+			id: "271877E8E7393D05"
+			tasks: [{
+				id: "270A1F088BF6441F"
+				type: "item"
+				item: "spectrum:manual"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			description: ["使用铁砧把宝石碎片砸成粉末，为七彩基座的合成提供“染料”。"]
+			dependencies: ["00A78BD1F10BE5D5"]
+			id: "4F507917FD331CA5"
+			tasks: [
+				{
+					id: "123CA6A1DEE05DCE"
+					type: "item"
+					item: "spectrum:amethyst_powder"
+				}
+				{
+					id: "4C819826E7C273AF"
+					type: "item"
+					item: "spectrum:topaz_powder"
+				}
+				{
+					id: "384C98AAAA16AD7C"
+					type: "item"
+					item: "spectrum:citrine_powder"
+				}
+			]
+			rewards: [{
+				id: "53CA0DB0010876E9"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			icon: "spectrum:pedestal_moonstone"
+			x: -4.0d
+			y: 3.0d
+			description: [
+				"这是一个很新、更新频率也很高的mod。"
+				"以下任务仅供参考，大家游玩时遇到问题可以先自己努力解决一下哦！"
+				""
+				"PS：本mod的推进需要逐渐解锁进度（不能跳过进度），如果指导书不提示新的内容的话，就努力解锁新的进度吧~"
+			]
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 2.0d
+			id: "346CB1473CEF0DF6"
+			tasks: [{
+				id: "4FEAC8A25B89E3A2"
+				type: "checkmark"
+				title: "关于光谱世界"
+			}]
+			rewards: [
+				{
+					id: "7E48DA5C4190048C"
+					type: "item"
+					item: "majobroom:broom_item"
+				}
+				{
+					id: "7ECF5C0CD693BFA9"
+					type: "item"
+					item: {
+						id: "majobroom:majo_hat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "276ECD653816C0FF"
+					type: "item"
+					item: {
+						id: "majobroom:majo_cloth"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			description: ["托帕石、紫水晶、黄水晶三种基座做出一种即可。"]
+			dependencies: ["271877E8E7393D05"]
+			min_required_tasks: 1
+			id: "00A78BD1F10BE5D5"
+			tasks: [
+				{
+					id: "7A4EE0CF6A089CF2"
+					type: "item"
+					title: "任意基座"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "spectrum:pedestals"
+						}
+					}
+				}
+				{
+					id: "20097B503FA962D2"
+					type: "advancement"
+					advancement: "spectrum:place_pedestal"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "7A1106A670A1F06B"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: -4.5d
+			y: -0.5d
+			description: ["原版地下的紫水晶、高山之上的托帕石。海平面以下的黄水晶。"]
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			id: "1D26B4EA81538C0A"
+			tasks: [
+				{
+					id: "6B06EA47FB1ABA9B"
+					type: "item"
+					item: "spectrum:topaz_shard"
+				}
+				{
+					id: "082CF44512307D11"
+					type: "item"
+					item: "minecraft:amethyst_shard"
+				}
+				{
+					id: "6772DA7789DEFB8C"
+					type: "item"
+					item: "spectrum:citrine_shard"
+				}
+			]
+			rewards: [{
+				id: "70392D6FCC7CA202"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			description: [
+				"七彩基座既可以进行mod中的合成，也可以进行原版合成。"
+				"使用红石信号或者用这个法杖，激活七彩基座的合成。"
+				"拿到这只画笔之后，你需要在七彩基座上进行一次非原版的合成来解锁后续步骤（如合成黄水晶玻璃）。"
+				""
+				"“每个魔法mod都应该有一根法杖。”"
+			]
+			dependencies: ["4F507917FD331CA5"]
+			id: "380B8D448CD2582B"
+			tasks: [
+				{
+					id: "2CA6D48B50F79C33"
+					type: "item"
+					item: "spectrum:paintbrush"
+				}
+				{
+					id: "7F8C6CB4BAB1311D"
+					type: "advancement"
+					advancement: "spectrum:craft_using_pedestal"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "7F7F5EEBAF061B1F"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			subtitle: "升级后记得右键一下"
+			description: [
+				"此处为CMY变种。按照合成表合成后，会直接将原有的紫水晶\\托帕石\\黄水晶七彩基座升级为CMY基座,，这之后你需要把基座挖下来完成任务，然后搭建一级注魔仪式祭坛并打开合成页面来解锁后续任务。"
+				"需要搭配聚集仪式使用，详情请见指导书。"
+			]
+			dependencies: ["380B8D448CD2582B"]
+			id: "288285DBDAB1C5FD"
+			tasks: [
+				{
+					id: "7CC51A6407BC4601"
+					type: "item"
+					item: "spectrum:pedestal_all_basic"
+				}
+				{
+					id: "38970B870E5B4B08"
+					type: "advancement"
+					advancement: "spectrum:craft_colored_pedestal"
+					criterion: ""
+				}
+				{
+					id: "6E38594171DC3CE4"
+					type: "advancement"
+					icon: "spectrum:citrine_shard"
+					advancement: "spectrum:build_basic_pedestal_structure"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "6B80BE503EA75678"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			description: [" 在海平面高度（即1-63层）生成。"]
+			dependencies: ["288285DBDAB1C5FD"]
+			id: "5E210CF7E49C569C"
+			tasks: [
+				{
+					id: "144F307F3773D60A"
+					type: "item"
+					item: "spectrum:sparklestone_gem"
+				}
+				{
+					id: "279DD362580E3DBA"
+					type: "advancement"
+					advancement: "spectrum:collect_sparklestone"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "1CEDDCEFE5B09803"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			description: ["右键可以放出一团灰色物质，即微生物。"]
+			dependencies: ["5E210CF7E49C569C"]
+			id: "309077656D4899C2"
+			tasks: [
+				{
+					id: "756523A57E469A14"
+					type: "item"
+					item: "spectrum:bottle_of_fading"
+				}
+				{
+					id: "63F09B57C33EBE9A"
+					type: "advancement"
+					advancement: "spectrum:craft_bottle_of_fading"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "6B7D5DBAF247B4F7"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 7.5d
+			y: -0.5d
+			description: ["将作物方块如西瓜南瓜或树叶，放在微生物旁边，作物被腐蚀后打破获取。"]
+			dependencies: ["309077656D4899C2"]
+			id: "50196DC829EF6061"
+			tasks: [
+				{
+					id: "30B9430F936A380F"
+					type: "item"
+					item: "spectrum:vegetal"
+				}
+				{
+					id: "4B61F4F2944F35B1"
+					type: "advancement"
+					advancement: "spectrum:collect_vegetal"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "04D69D0927E7B6EA"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			description: ["你可以自己制作树苗。"]
+			dependencies: ["50196DC829EF6061"]
+			id: "7AACC55C1BC80F2A"
+			tasks: [
+				{
+					id: "49D8FDC343C262C5"
+					type: "item"
+					title: "任意颜色树苗"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "spectrum:colored_saplings"
+						}
+					}
+				}
+				{
+					id: "7C883FF1000AD76C"
+					type: "advancement"
+					advancement: "spectrum:craft_colored_sapling"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "02763C65A2CAC6C7"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			title: "基础颜料"
+			x: 7.5d
+			y: 2.5d
+			description: [
+				"你可以在野外中发现不同颜色的染色树，"
+				"然后撸掉树叶收集颜料。"
+			]
+			dependencies: ["7AACC55C1BC80F2A"]
+			id: "5637FEB12ADC8EB3"
+			tasks: [
+				{
+					id: "1784AEDFFF413A2D"
+					type: "item"
+					item: "spectrum:red_pigment"
+				}
+				{
+					id: "2F9B072C97BA9711"
+					type: "item"
+					item: "spectrum:green_pigment"
+				}
+				{
+					id: "249461400929923E"
+					type: "item"
+					item: "spectrum:blue_pigment"
+				}
+				{
+					id: "410924E59A9A571C"
+					type: "item"
+					item: "spectrum:purple_pigment"
+				}
+				{
+					id: "5D1560209E0A7005"
+					type: "item"
+					item: "spectrum:cyan_pigment"
+				}
+				{
+					id: "4127885493CE3651"
+					type: "item"
+					item: "spectrum:pink_pigment"
+				}
+				{
+					id: "042CE7DDD88022F2"
+					type: "item"
+					item: "spectrum:lime_pigment"
+				}
+				{
+					id: "4D73CD8FE6A625A8"
+					type: "item"
+					item: "spectrum:yellow_pigment"
+				}
+				{
+					id: "30D3D325098D792C"
+					type: "item"
+					item: "spectrum:light_blue_pigment"
+				}
+				{
+					id: "7E751C647401C36A"
+					type: "item"
+					item: "spectrum:magenta_pigment"
+				}
+				{
+					id: "09444DB266ED321F"
+					type: "item"
+					item: "spectrum:orange_pigment"
+				}
+				{
+					id: "46407E5A459F83E1"
+					type: "advancement"
+					title: "收集齐颜料"
+					advancement: "spectrum:collect_all_basic_pigments_besides_brown"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "752C27FCC67D1508"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			subtitle: "你需要先把基础基座升级才能解锁配方"
+			description: ["你需要搭建融合仪式，对准融合圣坛右键即可展开透视图，搭建完成之后随便将一个物品右键放上去即可解锁成就。"]
+			dependencies: ["5637FEB12ADC8EB3"]
+			id: "12766F7759AA7EE6"
+			tasks: [
+				{
+					id: "68AAFAE80B2E152D"
+					type: "item"
+					item: "spectrum:fusion_shrine_basalt"
+				}
+				{
+					id: "2BDC0F68BB6C3EFF"
+					type: "advancement"
+					advancement: "spectrum:build_fusion_shrine"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "13FA168C4CFD1443"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			description: [
+				"在新月的月相下按照配方放置岩浆，托帕石，黄水晶，和紫水晶。合成时会有明显的音效。在新月的月相下按照配方放置岩浆，托帕石，黄水晶，和紫水晶。合成时会有明显的音效。“新月”即天空中的月相为一圈白色而中空。"
+				"后续流程会消耗不少缟玛瑙，建议你一次放64个黄水晶、紫水晶和托帕石，一次合成64个缟玛瑙。"
+				"{image:kubejs:textures/ftbq/moon.png width:200 height:200 align:1}"
+				"/time set 114514 ，该指令可以带你快速达到新月（喜）。"
+			]
+			dependencies: ["12766F7759AA7EE6"]
+			id: "4CE9B355B43E155E"
+			tasks: [
+				{
+					id: "42E9347329A0FB3D"
+					type: "item"
+					item: "spectrum:onyx_shard"
+				}
+				{
+					id: "2D52D9D0687CDF37"
+					type: "advancement"
+					advancement: "spectrum:create_onyx_shard"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "46ED27F60FA872E5"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 5136761027295037695L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: [
+				"和CMY升级一样，直接升级基座。"
+				""
+				"升级完基座够还需要升级周围的多方块结构，升级完多方块结构之后右键缟玛瑙七彩基座解锁成就和后续任务。"
+			]
+			dependencies: ["4CE9B355B43E155E"]
+			id: "7B51BFDD655E1281"
+			tasks: [
+				{
+					id: "3DBADF0A9CC882BC"
+					type: "advancement"
+					advancement: "spectrum:craft_onyx_pedestal"
+					criterion: ""
+				}
+				{
+					id: "69B645C4A67AA24E"
+					type: "advancement"
+					advancement: "spectrum:midgame/build_advanced_pedestal_structure"
+					criterion: ""
+				}
+				{
+					id: "49C445FB9DB476CF"
+					type: "item"
+					item: "spectrum:pedestal_onyx"
+				}
+			]
+			rewards: [{
+				id: "184472FE7D871AAA"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			description: ["在下界中挖掘获得。"]
+			dependencies: ["59D6B500E090C86B"]
+			id: "48F57785B56CE5C5"
+			tasks: [{
+				id: "23CEE430F147FB1D"
+				type: "item"
+				item: "spectrum:scarlet_fragments"
+			}]
+			rewards: [{
+				id: "0F2B846A140C8B87"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 7.5d
+			y: 6.0d
+			description: [
+				"光谱世界是一个流程极其完整、内容繁多、各方面紧密性很强的优质mod。"
+				"除了上述为完成本整合包目标所需的流程外仍有众多精彩内容，如会下蛋产奶的毛猪、用颜料驱动的熔炉、独特的炼金体系、独特的药水buff，以及作者并未在1.18版本更新的渊深世界（新次元）以及养小火龙等等内容，还有非常多的精彩等着你去探索。"
+				"如对任务流程有任何意见或建议，请到群或频道中反馈，非常感谢。"
+			]
+			dependencies: ["2BE6F94629B66CAB"]
+			id: "7AF59E2FDA4EBDEF"
+			tasks: [{
+				id: "2055D26027AAD096"
+				type: "checkmark"
+				title: "碎碎念"
+			}]
+			rewards: [{
+				id: "4FD7DD554C04DA47"
+				type: "item"
+				item: "minecraft:red_tulip"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.5d
+			description: ["解锁棕色树苗前需要完成缟玛瑙基座结构。"]
+			dependencies: ["7B51BFDD655E1281"]
+			id: "59D6B500E090C86B"
+			tasks: [
+				{
+					id: "0D1158C082724B98"
+					type: "item"
+					item: "spectrum:brown_sapling"
+				}
+				{
+					id: "61EF1B63D1F38D07"
+					type: "item"
+					item: "spectrum:brown_pigment"
+				}
+				{
+					id: "6349380535E7B900"
+					type: "advancement"
+					advancement: "spectrum:midgame/craft_something_brown"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "6F99B8B670076592"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			description: ["做出这个液体水晶桶之后必须泡在液体水晶里一次才能继续接下来的任务。"]
+			dependencies: ["715195FE8612B929"]
+			id: "4CE237AE8F58B2CB"
+			tasks: [
+				{
+					id: "20908830CC2D6BD3"
+					type: "item"
+					item: "spectrum:liquid_crystal_bucket"
+				}
+				{
+					id: "0E8806BFB56722B1"
+					type: "advancement"
+					advancement: "spectrum:midgame/enter_liquid_crystal"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "1ECD120E8C82F763"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			dependencies: [
+				"48F57785B56CE5C5"
+				"760AF94B6D07B630"
+			]
+			id: "7945125249DD7028"
+			tasks: [
+				{
+					id: "70956D66E023873C"
+					type: "item"
+					item: "spectrum:bottle_of_failing"
+				}
+				{
+					id: "20A377F59EA8E5E6"
+					type: "advancement"
+					advancement: "spectrum:midgame/craft_bottle_of_failing"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "367F79B71C339DE3"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 6.0d
+			description: [
+				"使用蚀解之瓶倒在黑曜石中挖掘微生物掉落"
+				"就像褪解之瓶那样。"
+			]
+			dependencies: ["7945125249DD7028"]
+			id: "58CB04E34DFCAC0D"
+			tasks: [
+				{
+					id: "71873DDADF3CA51E"
+					type: "item"
+					item: "spectrum:neolith"
+				}
+				{
+					id: "57AA79D410F30081"
+					type: "advancement"
+					advancement: "spectrum:midgame/collect_neolith"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "564C8E1FA8A91404"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: -3.5d
+			y: 5.0d
+			shape: "circle"
+			subtitle: "制作无限之剑剑身的材料之一"
+			description: [
+				"在雷雨天气闪电劈到的地方生成，"
+				"你也可以使用特殊附魔自行生成雷电。"
+			]
+			dependencies: ["58CB04E34DFCAC0D"]
+			id: "116BF87094EA4E42"
+			tasks: [{
+				id: "2B5685D770BDE04D"
+				type: "item"
+				item: "spectrum:lightning_stone"
+			}]
+			rewards: [
+				{
+					id: "598CF5EBC112377A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1005535573748960953L
+				}
+				{
+					id: "09E5522D6A2D3A48"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 5136761027295037695L
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			description: ["合成该物品时，融合圣坛附近会生成很多午夜溶液，这种溶液会杀死生物、吞噬掉落的物品、改变接触到的某些方块（甚至水方块），请务必在旁边监督。"]
+			dependencies: ["58CB04E34DFCAC0D"]
+			id: "1E114E9019D2C90E"
+			tasks: [
+				{
+					id: "3C10D7AB6DC3579A"
+					type: "item"
+					item: "spectrum:midnight_aberration"
+				}
+				{
+					id: "4E0BA0DCD8BA7CB3"
+					type: "advancement"
+					advancement: "spectrum:midgame/create_midnight_aberration"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "49FA70CD8AB4EE8A"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			description: [
+				"在制作午夜像差时会生成午夜溶液（可以用桶收集）"
+				"任何生物死在午夜溶液中都会掉落午夜残片。"
+			]
+			dependencies: ["1E114E9019D2C90E"]
+			id: "4DC63D1752013975"
+			tasks: [{
+				id: "5EF6A570C2559F46"
+				type: "item"
+				item: "spectrum:midnight_chip"
+			}]
+			rewards: [{
+				id: "3146E21A1D786C30"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			dependencies: [
+				"4DC63D1752013975"
+				"0F5773559E05C414"
+			]
+			id: "2F08F5EB273B58D8"
+			tasks: [{
+				id: "13C56A57EA9CA274"
+				type: "item"
+				item: "spectrum:bottle_of_ruin"
+			}]
+			rewards: [{
+				id: "5907D3D4A58E9D87"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			description: ["主世界地下生成"]
+			dependencies: [
+				"027AAA6A3553F7DB"
+				"58CB04E34DFCAC0D"
+			]
+			hide: true
+			id: "0F5773559E05C414"
+			tasks: [{
+				id: "2F39D8A8872E7FB3"
+				type: "item"
+				item: "spectrum:raw_azurite"
+			}]
+			rewards: [{
+				id: "0A10B09269D404E7"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "制作无限之剑剑柄的材料之一"
+			description: [
+				"使用坏灭之瓶倒在基岩上挖掘微生物掉落。"
+				"不要放任他吞噬基岩，不然你会后悔的。"
+			]
+			dependencies: ["2F08F5EB273B58D8"]
+			size: 1.5d
+			id: "6CD923D48AF77852"
+			tasks: [
+				{
+					id: "22FD6DB950E027D4"
+					type: "item"
+					item: "spectrum:bedrock_dust"
+				}
+				{
+					id: "2E87F2441E67A654"
+					type: "item"
+					item: "spectrum:bedrock_storage_block"
+				}
+			]
+			rewards: [
+				{
+					id: "68ADEC8511CB7C3C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1005535573748960953L
+				}
+				{
+					id: "72CC9F589BF795AA"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 5136761027295037695L
+				}
+				{
+					id: "3FB8188D446256A9"
+					type: "advancement"
+					advancement: "spectrum:midgame/enter_dimension"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			description: [
+				"美人鱼草在主世界地下生成，成熟后美人鱼宝石会飘在水面上。"
+				"由于群系的生成限制，冷冻深海群系下只会生成美人鱼草而不会生成海草。"
+			]
+			dependencies: ["7B51BFDD655E1281"]
+			id: "715195FE8612B929"
+			tasks: [{
+				id: "01A9672253B1E672"
+				type: "item"
+				item: "spectrum:mermaids_gem"
+			}]
+			rewards: [{
+				id: "0070AA7782DFE2B9"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			title: "芙兰朵露之翼[可选任务]"
+			x: 3.0d
+			y: -2.0d
+			subtitle: "“一个没有耐久且不用烟花的鞘翅”"
+			dependencies: ["288285DBDAB1C5FD"]
+			id: "66221472C5C98E3A"
+			tasks: [{
+				id: "550D3465FE6F6423"
+				type: "item"
+				item: {
+					id: "icarus:flandres_wings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "天体怀表[可选任务]"
+			x: 6.0d
+			y: 2.5d
+			description: [
+				"右键可以加速时间，方便你更快达到新月。"
+				"生存模式暂不可用并非你不能使用，而是正常流程中生存模式不可获取。"
+				"PS:不要使用过多,不然怪物会变得过于强大"
+			]
+			dependencies: ["12766F7759AA7EE6"]
+			optional: true
+			id: "5BAC0510191FA425"
+			tasks: [{
+				id: "60AA89408B845603"
+				type: "item"
+				item: "spectrum:celestial_pocketwatch"
+			}]
+		}
+		{
+			title: "光谱扩展"
+			icon: "spectrum:moonstone_shard"
+			x: 4.5d
+			y: 4.5d
+			subtitle: "用ftb绕过了一些限制,现在你可以使用一些未来的东西"
+			description: ["注意，由于这之后的内容作者仅在1.19以及后续版本更新，不确定1.18的未开放内容和1.19正式版内容是否有差距，请根据个人实践结合百科内容进行判断。"]
+			dependencies: ["6CD923D48AF77852"]
+			hide: true
+			id: "440073C91F3B1DC0"
+			tasks: [{
+				id: "5AD81B3D4B6E27C7"
+				type: "checkmark"
+				title: "光谱扩展"
+			}]
+			rewards: [
+				{
+					id: "1BD87EBDC40DFED6"
+					type: "advancement"
+					advancement: "spectrum:midgame/collect_moonstone_shard"
+					criterion: ""
+				}
+				{
+					id: "14240016ECCF9F88"
+					type: "item"
+					item: "spectrum:budding_moonstone"
+					count: 64
+				}
+				{
+					id: "7B9B39B626DCC149"
+					type: "advancement"
+					advancement: "spectrum:midgame/craft_moonstone_pedestal"
+					criterion: ""
+				}
+				{
+					id: "73F92CCE76F8290A"
+					type: "advancement"
+					advancement: "spectrum:lategame/collect_moonstone_chiseled_block"
+					criterion: ""
+				}
+				{
+					id: "70E06C7F0BF57ACD"
+					type: "item"
+					item: "spectrum:moonstone_chiseled_calcite"
+					count: 64
+				}
+			]
+		}
+		{
+			title: "月长石基座"
+			icon: "spectrum:pedestal_moonstone"
+			x: 6.0d
+			y: 4.5d
+			subtitle: "将月长石放到缟玛瑙基座中升级,注意:时间比较漫长,需要等待"
+			description: ["注意,由于是强行绕过限制,配方rei中不一定会有,记得多看光谱书"]
+			dependencies: ["440073C91F3B1DC0"]
+			id: "1122A7C68DF8DA62"
+			tasks: [{
+				id: "129762B954F7A37F"
+				type: "advancement"
+				advancement: "spectrum:lategame/build_complex_pedestal_structure"
+				criterion: ""
+			}]
+		}
+		{
+			title: "七彩碎片"
+			x: 7.5d
+			y: 4.5d
+			subtitle: "用融合祭坛合成后,你就可以使用超限附魔了"
+			description: ["超限附魔需要超级超级多的染料，冲刺之前建议先做自动化。"]
+			dependencies: ["1122A7C68DF8DA62"]
+			id: "2BE6F94629B66CAB"
+			tasks: [{
+				id: "7D18A6AFD43464D3"
+				type: "advancement"
+				advancement: "spectrum:lategame/create_spectral_shard"
+				criterion: ""
+			}]
+		}
+		{
+			title: "苍绿之石"
+			x: 6.0d
+			y: 6.0d
+			subtitle: "你可以在末地找到他"
+			dependencies: ["1122A7C68DF8DA62"]
+			id: "7A3F4122CAD87DD9"
+			tasks: [{
+				id: "7EBFE2495619AED0"
+				type: "advancement"
+				advancement: "spectrum:lategame/collect_paletur"
+				criterion: ""
+			}]
+		}
+		{
+			title: "共振镐"
+			x: 4.5d
+			y: 6.0d
+			subtitle: "用苍绿之石和月长石合成"
+			description: ["你可以挖刷怪笼了"]
+			dependencies: ["7A3F4122CAD87DD9"]
+			id: "194A0C7FDCBD4476"
+			tasks: [{
+				id: "2A46CF74C3287D03"
+				type: "item"
+				item: {
+					id: "spectrum:resonant_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							lvl: 1s
+							id: "spectrum:resonance"
+						}]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "15493738C433A690"
+					type: "advancement"
+					advancement: "spectrum:lategame/craft_resonant_pickaxe"
+					criterion: ""
+				}
+				{
+					id: "751273F6F463D453"
+					type: "advancement"
+					advancement: "spectrum:lategame/break_spawner_with_resonance_tool"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			description: ["这是一种存在于沼泽之中类似甘蔗的植物。"]
+			dependencies: ["48F57785B56CE5C5"]
+			id: "760AF94B6D07B630"
+			tasks: [{
+				id: "6A791B5DB6986EBB"
+				type: "item"
+				item: "spectrum:quitoxic_reeds"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.5d
+			description: [
+				"夜晚会有流星从天降落，打爆流星即可获取流星碎片，或者潜行右键捡起流星用铁压破也可。"
+				"提高流星刷新率的办法：手持望远镜，带上夜视buff，视距调低，搭建一个海拔高的平台，等待即可。"
+			]
+			dependencies: [
+				"5637FEB12ADC8EB3"
+				"59D6B500E090C86B"
+			]
+			id: "5D331D77BFF11B48"
+			tasks: [{
+				id: "0CA2437E711E28C4"
+				type: "item"
+				item: "spectrum:shooting_star"
+			}]
+			rewards: [
+				{
+					id: "4AD563AB66E19FC0"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1005535573748960953L
+				}
+				{
+					id: "2882CF8DCDBE4882"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 5136761027295037695L
+				}
+			]
+		}
+		{
+			title: "铋晶科技"
+			icon: "spectrum:bismuth_crystal"
+			x: 6.0d
+			y: 7.5d
+			dependencies: ["7A3F4122CAD87DD9"]
+			id: "2139B23753F33D34"
+			tasks: [{
+				id: "1B1CF83C299064F5"
+				type: "item"
+				item: "spectrum:moonstone_shard"
+				count: 20L
+			}]
+			rewards: [
+				{
+					id: "204590ACB01BB5D7"
+					type: "advancement"
+					advancement: "spectrum:midgame/collect_bismuth"
+					criterion: ""
+				}
+				{
+					id: "364541D0B22E94C1"
+					type: "advancement"
+					advancement: "spectrum:midgame/collect_bismuth_crystal"
+					criterion: ""
+				}
+				{
+					id: "13F5E3F59AC16FF2"
+					type: "advancement"
+					advancement: "spectrum:midgame/grow_bismuth_in_crystallarieum"
+					criterion: ""
+				}
+				{
+					id: "035CECA91ECFB4CC"
+					type: "item"
+					item: "spectrum:bismuth_crystal"
+					count: 10
+				}
+				{
+					id: "467E2F68613A98BC"
+					type: "item"
+					item: "spectrum:small_bismuth_bud"
+					count: 64
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

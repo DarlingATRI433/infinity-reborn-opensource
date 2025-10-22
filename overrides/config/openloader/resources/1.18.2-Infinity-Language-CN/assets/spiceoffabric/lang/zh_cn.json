@@ -1,0 +1,36 @@
+{
+	"Diet Journal": "饮食日记",
+	"spiceoffabric.journal.inside_title": "§8§l§n\u25b6 饮食日记 \u25c0§r",
+	"spiceoffabric.journal.line": "§l%s.§r %s",
+
+	"spiceoffabric.item.tooltip.never_eaten": "§3§o这闻起来神秘而陌生§r",
+	"spiceoffabric.item.tooltip.last_eaten.simple": "最后一次吃的  %d 食物是在以前",
+	"spiceoffabric.item.tooltip.last_eaten.simple.one": "最后一次吃的是单一食物",
+	"spiceoffabric.item.tooltip.last_eaten.simple.last": "刚被吃掉了",
+	"spiceoffabric.item.tooltip.last_eaten.extended": "%s,\n吃 %d 其他食物\n以充分恢复饥饿值。",
+	"spiceoffabric.item.tooltip.last_eaten.extended.one": "%s,\n只吃一种食物\n不足以充分恢复饥饿值。",
+
+	"spiceoffabric.command.clear_history.was_cleared": "你的饮食日记已被重置",
+	"spiceoffabric.command.clear_history.cleared_players": "清除了%s玩家的饮食日记记录",
+	"spiceoffabric.command.set_base_max_health.target": "你的血量已被调整",
+	"spiceoffabric.command.set_base_max_health.executor": "设置 %d 玩家的基本血量为 %d （%s 血量）。",
+	"spiceoffabric.command.update_max_health.success": "刷新了 %d 玩家的血量",
+	"spiceoffabric.commands.carrot_not_enabled": "胡萝卜模式没有启用!",
+
+	"tweed4_tailor_screen.screen.spiceoffabric": "生活调味料Fabric设置",
+	"tweed4_tailor_screen.screen.spiceoffabric.respawn": "快速回血",
+	"tweed4_tailor_screen.screen.spiceoffabric.respawn.saturation": "饱和度",
+	"tweed4_tailor_screen.screen.spiceoffabric.respawn.hunger": "饥饿",
+	"tweed4_tailor_screen.screen.spiceoffabric.respawn.reset-history": "重置饮食日记",
+	"tweed4_tailor_screen.screen.spiceoffabric.respawn.reset-carrot-mode": "重置胡萝卜模式",
+	"tweed4_tailor_screen.screen.spiceoffabric.food": "食物",
+	"tweed4_tailor_screen.screen.spiceoffabric.food.increase-eating-time": "增加进食时间",
+	"tweed4_tailor_screen.screen.spiceoffabric.food.history-length": "饮食日记记录长度",
+	"tweed4_tailor_screen.screen.spiceoffabric.food.saturation": "饱和度",
+	"tweed4_tailor_screen.screen.spiceoffabric.food.consume-duration": "消耗时间",
+	"tweed4_tailor_screen.screen.spiceoffabric.food.hunger": "饥饿",
+	"tweed4_tailor_screen.screen.spiceoffabric.carrot": "胡萝卜模式",
+	"tweed4_tailor_screen.screen.spiceoffabric.carrot.enable": "启用胡萝卜模式",
+	"tweed4_tailor_screen.screen.spiceoffabric.carrot.health-formula": "健康配方",
+	"tweed4_tailor_screen.screen.spiceoffabric.carrot.max-health": "最大血量"
+}

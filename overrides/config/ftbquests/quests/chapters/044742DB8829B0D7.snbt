@@ -1,0 +1,161 @@
+{
+	id: "044742DB8829B0D7"
+	group: "0B54634113ED2BBC"
+	order_index: 2
+	filename: "044742DB8829B0D7"
+	title: "灵魂魔法"
+	icon: "spirit:soul_crystal"
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["5F90E80387A5680D"]
+			id: "4F843657F81426EA"
+			tasks: [{
+				id: "081D380D2485EB98"
+				type: "item"
+				item: "spirit:soul_crystal_shard"
+			}]
+			rewards: [{
+				id: "38E896E30AB9DC9D"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["4F843657F81426EA"]
+			id: "51DDB066B35113B1"
+			tasks: [{
+				id: "36F90ECF5B3D056F"
+				type: "item"
+				item: "spirit:crude_soul_crystal"
+			}]
+			rewards: [{
+				id: "25F77B09B62A6F29"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"你每次击杀的生物将灵魂储存到水晶内，达到一定数量放在灵魂牢笼中，可以将水晶内储存的灵魂实体化（暨可自定义的刷怪笼）。"
+				""
+				"而灵魂收割者附魔则可以增加每次杀死生物收获的灵魂。"
+				""
+				"可容纳至多512个同种灵魂，期间分为（Null）Eins、Zwei、Drei、Vier四个等级，未分层的层称为“Null”"
+				""
+				"具体请查看灵魂牢笼的信息（对着灵魂牢笼按U查看）"
+			]
+			dependencies: ["51DDB066B35113B1"]
+			id: "1A27706C876642BD"
+			tasks: [{
+				id: "0B4BD991507FF37E"
+				type: "item"
+				item: "spirit:soul_crystal"
+			}]
+			rewards: [{
+				id: "527D0AF7179A592C"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			description: [
+				"你需要将萤石丢入点燃的灵魂火里"
+				"================================================"
+				"{image:kubejs:textures/ftbq/spirit.png width:200 height:140 align:1}"
+			]
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			id: "5F90E80387A5680D"
+			tasks: [{
+				id: "7EB9929151A6F362"
+				type: "item"
+				item: "spirit:soul_powder"
+			}]
+			rewards: [{
+				id: "3A65EA8A0ED8B078"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1005535573748960953L
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["右键将灵魂水晶放到灵魂牢笼内，可刷出灵魂水晶内的生物。"]
+			dependencies: ["1A27706C876642BD"]
+			id: "40A23FC8277F105C"
+			tasks: [{
+				id: "7631A167D9F06AE7"
+				type: "item"
+				item: "spirit:soul_cage"
+			}]
+			rewards: [
+				{
+					id: "683407E0C9408584"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1005535573748960953L
+				}
+				{
+					id: "2626A98C92D021E7"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 5136761027295037695L
+				}
+			]
+		}
+		{
+			title: "关于自动化"
+			icon: "botania:cosmetic_questgiver_mark"
+			x: 0.0d
+			y: -1.5d
+			subtitle: "你可以通过漏斗的升级来自动化这个"
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			id: "7F5C2AFD76DB8119"
+			tasks: [{
+				id: "48901486454BBD7A"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "使用灵魂蜕变,u键灵魂基座有惊喜"
+			description: [
+				"{image:kubejs:textures/ftbq/sp.png width:200 height:200 align:1}"
+				"其实和末影基座一个摆法"
+			]
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			id: "683A3D6C712A8750"
+			tasks: [
+				{
+					id: "2147D5A9DD37EE69"
+					type: "item"
+					item: "spirit:soul_pedestal"
+				}
+				{
+					id: "23DBE6BAF1A8F176"
+					type: "item"
+					item: "spirit:pedestal"
+					count: 8L
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

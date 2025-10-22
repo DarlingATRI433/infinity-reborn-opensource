@@ -1,0 +1,10 @@
+{
+  "soundCategory.extrasounds_master": "更多音效",
+  "soundCategory.inventory": "背包点击音效",
+  "soundCategory.action": "物品掉落音效",
+  "soundCategory.chat": "聊天消息音效",
+  "soundCategory.chat_mention": "聊天栏@提及玩家音效",
+  "soundCategory.effects": "效果/药剂",
+  "soundCategory.scroll": "物品栏滚动音效",
+  "soundCategory.typing": "打字音效"
+}

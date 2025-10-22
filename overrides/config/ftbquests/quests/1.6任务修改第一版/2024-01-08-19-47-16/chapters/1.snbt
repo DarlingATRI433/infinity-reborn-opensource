@@ -1,0 +1,212 @@
+{
+	id: "2075628C724711F8"
+	group: ""
+	order_index: 2
+	filename: "1"
+	title: "难度调整"
+	icon: "kubejs:paolude_xiaxin"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "难度减10"
+			icon: "kubejs:jiushu_heart"
+			disable_toast: true
+			x: -5.0d
+			y: -15.0d
+			dependencies: ["74C39EB32A2520AA"]
+			size: 5.0d
+			can_repeat: true
+			id: "32A705F82AAEFF35"
+			tasks: [{
+				id: "24E4055E6D947412"
+				type: "item"
+				item: "minecraft:dirt"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "050069810BE4EB3E"
+				type: "command"
+				team_reward: false
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				command: "/improvedmobs difficulty player @p add -10"
+				player_command: false
+			}]
+		}
+		{
+			title: "难度加10"
+			icon: "minecraft:creeper_head"
+			disable_toast: true
+			x: -5.0d
+			y: -5.0d
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 5.0d
+			can_repeat: true
+			id: "067AE3CC58FD48DC"
+			tasks: [{
+				id: "0DE7A553636B17ED"
+				type: "item"
+				item: "minecraft:dirt"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "60AA8E4B21064BDB"
+				type: "command"
+				team_reward: false
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				command: "/improvedmobs difficulty player @p add 10"
+				player_command: false
+			}]
+		}
+		{
+			title: "难度减100"
+			icon: "kubejs:jiushu_heart"
+			disable_toast: true
+			x: -15.0d
+			y: -15.0d
+			dependencies: ["74C39EB32A2520AA"]
+			size: 5.0d
+			can_repeat: true
+			id: "2D272D9D7D56A20F"
+			tasks: [{
+				id: "709022278E1AFE86"
+				type: "item"
+				item: "minecraft:dirt"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4D9A454D9F2117DA"
+				type: "command"
+				team_reward: false
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				command: "/improvedmobs difficulty player @p add -100"
+				player_command: false
+			}]
+		}
+		{
+			title: "难度加100"
+			icon: "minecraft:creeper_head"
+			disable_toast: true
+			x: -15.0d
+			y: -5.0d
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 5.0d
+			can_repeat: true
+			id: "7B5F0E479A9086BD"
+			tasks: [{
+				id: "09A4842144731324"
+				type: "item"
+				item: "minecraft:dirt"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "79CF716886EBFFCD"
+				type: "command"
+				team_reward: false
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				command: "/improvedmobs difficulty player @p add 100"
+				player_command: false
+			}]
+		}
+		{
+			title: "难度归零"
+			icon: "minecraft:clock"
+			disable_toast: true
+			x: -10.0d
+			y: -17.5d
+			subtitle: "你依旧可以继续加减"
+			dependencies: ["74C39EB32A2520AA"]
+			size: 6.5d
+			can_repeat: true
+			id: "4E9B737A33054BED"
+			tasks: [{
+				id: "0511EA793F83A3FB"
+				type: "item"
+				item: "minecraft:dirt"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0268B8380CC849C9"
+				type: "command"
+				team_reward: false
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				command: "/improvedmobs difficulty player @p set 0"
+				player_command: false
+			}]
+		}
+		{
+			title: "难度到上限"
+			icon: "spectrum:crescent_clock"
+			disable_toast: true
+			x: -9.75d
+			y: -3.25d
+			subtitle: "你依旧可以继续加减"
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 6.5d
+			can_repeat: true
+			id: "13663D80DDB84B89"
+			tasks: [{
+				id: "6040A0C19D1976FC"
+				type: "item"
+				item: "minecraft:dirt"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "38E828FC71933C65"
+				type: "command"
+				team_reward: false
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				command: "/improvedmobs difficulty player @p set 1000"
+				player_command: false
+			}]
+		}
+		{
+			title: "关于这里的难度调整"
+			icon: "botania:cosmetic_questgiver_mark"
+			x: -10.0d
+			y: -10.0d
+			shape: "diamond"
+			description: ["这里本质上是通过指令来调整玩家的难度数值，是为了让种田休闲玩家和硬核挑战玩家可以根据自身情况调整游戏压力。"]
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 5.0d
+			id: "74C39EB32A2520AA"
+			tasks: [{
+				id: "4058B29960FCF9C7"
+				type: "checkmark"
+				title: "已阅"
+			}]
+		}
+		{
+			title: "难度介绍"
+			icon: "kubejs:difficulty_changer"
+			x: -16.0d
+			y: -10.0d
+			subtitle: "使用难度切换器切换难度"
+			description: [
+				"经典难度下怪物会概率掉落额外的铜币,会掉落三种稀有度的卡包,有概率掉落4种原版矿物"
+				""
+				"专家难度下会概率掉落额外的银币和稀有度更高的两种卡包,boss有概率会掉模组矿物,怪物有概率掉神器碎片,怪物有概率掉落空白之心"
+				""
+				"大师难度下凋零骷髅必掉头,怪物概率掉落额外金币,概率掉落神话卡包,boss必定掉落模组矿物(数量更多),怪物有概率掉落神器零件"
+			]
+			size: 4.0d
+			id: "3CA789DAADE41581"
+			tasks: [{
+				id: "75CF0897F3DCF9BA"
+				type: "checkmark"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

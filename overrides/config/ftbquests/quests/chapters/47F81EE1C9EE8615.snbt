@@ -1,0 +1,110 @@
+{
+	id: "47F81EE1C9EE8615"
+	group: "5D8C97B73DA1279B"
+	order_index: 1
+	filename: "47F81EE1C9EE8615"
+	title: "奇异商店"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "购买奇异饰品"
+			icon: "artifacts:feral_claws"
+			disable_toast: true
+			x: -2.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 2.0d
+			can_repeat: true
+			id: "542F1F70D5491B84"
+			tasks: [{
+				id: "12FECA4B9117CCDC"
+				type: "item"
+				disable_toast: true
+				item: {
+					id: "numismatic-overhaul:gold_coin"
+					Count: 1b
+					tag: { }
+				}
+				count: 5L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "03ED532CBE07D26B"
+				type: "random"
+				team_reward: false
+				table_id: 1552600754727581119L
+			}]
+		}
+		{
+			title: "购买飞升之戒"
+			icon: "ringsofascension:ring_flight"
+			disable_toast: true
+			x: 0.5d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 2.0d
+			can_repeat: true
+			id: "311E19EE7CA783E0"
+			tasks: [{
+				id: "39BABAB7A7C2D1E6"
+				type: "item"
+				disable_toast: true
+				item: {
+					id: "numismatic-overhaul:gold_coin"
+					Count: 1b
+					tag: { }
+				}
+				count: 3L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6984778085A59601"
+				type: "random"
+				team_reward: false
+				table_id: 5206663203530399561L
+			}]
+		}
+		{
+			title: "卡片回收"
+			x: -4.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "回收多余的卡片"
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 2.0d
+			optional: true
+			can_repeat: true
+			id: "33931CD7D03D8872"
+			tasks: [{
+				id: "1D48A6BF79AC24AA"
+				type: "item"
+				title: "任意卡片"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "collectorsalbum:cards_nature"
+					}
+				}
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2967D3336C68BD8F"
+				type: "choice"
+				icon: "collectorsalbum:mythical_card_package"
+				team_reward: false
+				exclude_from_claim_all: true
+				table_id: 5850841325235749213L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

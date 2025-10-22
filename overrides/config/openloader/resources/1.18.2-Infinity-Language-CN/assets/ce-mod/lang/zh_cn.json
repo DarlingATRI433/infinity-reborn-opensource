@@ -1,0 +1,73 @@
+{
+  "item.ce.glow_paste": "荧光膏",
+  "block.ce.spectacle_candle": "荧光蜡烛",
+
+  "item.ce.amethyst_flute": "紫水晶长笛",
+  "item.ce.goop": "黏胶",
+  "block.ce.goop_block": "黏胶块",
+  "block.ce.goop_splat": "黏胶",
+  "block.ce.dripping_goop": "黏胶滴",
+  "block.ce.goop_trap": "黏胶陷阱",
+  "item.ce.goop_bucket": "一桶黏胶",
+
+  "item.ce.goop_spawn_egg": "黏胶刷怪蛋",
+  "item.ce.dripstone_tortoise_spawn_egg": "滴水石龟刷怪蛋",
+  "item.ce.cruncher_spawn_egg": "咬嚼者刷怪蛋",
+
+  "block.ce.lightning_anchor": "闪电锚",
+  "block.ce.charged_lightning_anchor": "带电闪电锚",
+
+  "item.ce.rose_quartz": "玫瑰石英",
+  "block.ce.rose_quartz_block": "玫瑰石英块",
+  "block.ce.jagged_rose_quartz": "锯齿状玫瑰石英",
+
+  "block.ce.polished_rose_quartz": "磨制玫瑰石英块",
+  "block.ce.polished_rose_quartz_slab": "磨制玫瑰石英台阶",
+  "block.ce.polished_rose_quartz_stairs": "磨制玫瑰石英楼梯",
+  "block.ce.polished_rose_quartz_wall": "磨制玫瑰石英墙",
+
+  "block.ce.rose_quartz_tiles": "玫瑰石英瓦",
+  "block.ce.rose_quartz_tile_slab": "玫瑰石英瓦台阶",
+  "block.ce.rose_quartz_tile_stairs": "玫瑰石英瓦楼梯",
+  "block.ce.rose_quartz_tile_wall": "玫瑰石英瓦墙",
+  "block.ce.rose_quartz_chimes": "玫瑰石英风铃",
+  "block.ce.rose_quartz_lamp": "玫瑰石英灯",
+  "block.ce.soul_rose_quartz_lamp": "灵魂玫瑰石英灯",
+
+  "item.glow_paste.place": "荧光斑点",
+  "block.ce.glow_splotch": "荧光斑点",
+
+  "advancements.underground.root.title": "地下世界",
+  "advancements.underground.root.description": "越深入，发现的就越多。",
+
+  "advancements.adventure.find_mountain_shrine.title": "圣殿",
+  "advancements.adventure.find_mountain_shrine.description": "在野外上找到山神庙。",
+
+  "advancements.underground.spyglass_at_goop.title": "一个有趣的发现！",
+  "advancements.underground.spyglass_at_goop.description": "通过望远镜看一个粘糊糊的东西。",
+
+  "advancements.underground.stuck_in_goop_trap.title": "棘手的情况！",
+  "advancements.underground.stuck_in_goop_trap.description": "陷入一个粘性陷阱。",
+
+  "advancements.underground.place_glow_paste.title": "一块发光的斑点！",
+  "advancements.underground.place_glow_paste.description": "使用荧光膏照亮一个区域。",
+
+  "advancements.underground.collect_rose_quartz.title": "海底矿物！",
+  "advancements.underground.collect_rose_quartz.description": "收集一些玫瑰石英。",
+
+  "advancements.underground.cave_explorer.title": "一个真正的洞穴探险家！",
+  "advancements.underground.cave_explorer.description": "探索每一个洞穴生物群落。",
+
+  "advancements.underground.below_zero.title": "零度以下",
+  "advancements.underground.below_zero.description": "进入深板岩层。",
+
+  "gameplay.unobtainable": "§e未发布的内容",
+
+  "entity.ce.goop": "一坨黏胶",
+  "entity.ce.dripstone_tortoise": "滴水石龟",
+  "entity.ce.cruncher": "咬嚼者",
+  "entity.ce.big_goop_drip": "大滴的粘稠液体",
+
+  "biome.ce.goop_caves": "黏胶洞穴",
+  "biome.ce.rose_quartz_caves": "玫瑰石英洞穴"
+}

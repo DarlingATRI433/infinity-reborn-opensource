@@ -1,0 +1,575 @@
+{
+	id: "54A143AC00492D8E"
+	group: ""
+	order_index: 1
+	filename: "boss"
+	title: "BOSS列表"
+	icon: "bosses_of_mass_destruction:brimstone_nectar"
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "terrarianslimes:slime_crown"
+			disable_toast: true
+			x: -4.0d
+			y: -2.0d
+			id: "1FDB5F752A8C3814"
+			tasks: [{
+				id: "3169FDFEF0D26902"
+				type: "kill"
+				icon: "terrarianslimes:slime_crown"
+				disable_toast: true
+				entity: "terrarianslimes:king_slime"
+				value: 1L
+			}]
+		}
+		{
+			icon: "bosses_of_mass_destruction:void_thorn"
+			x: -12.5d
+			y: 2.0d
+			id: "1886622C1F1C9E39"
+			tasks: [{
+				id: "7F67884D09EA223D"
+				type: "kill"
+				entity: "bosses_of_mass_destruction:void_blossom"
+				value: 1L
+			}]
+		}
+		{
+			x: -10.5d
+			y: 2.0d
+			id: "7417ABED6D5DA5D5"
+			tasks: [{
+				id: "5F68E52C435AFCE2"
+				type: "kill"
+				icon: "bosses_of_mass_destruction:blazing_eye"
+				entity: "bosses_of_mass_destruction:gauntlet"
+				value: 1L
+			}]
+		}
+		{
+			icon: "bosses_of_mass_destruction:ancient_anima"
+			x: -8.5d
+			y: 2.0d
+			id: "4423C872A3397991"
+			tasks: [{
+				id: "03F5B89C010A3722"
+				type: "kill"
+				entity: "bosses_of_mass_destruction:lich"
+				value: 1L
+			}]
+		}
+		{
+			icon: "bosses_of_mass_destruction:obsidian_heart"
+			x: -6.5d
+			y: 2.0d
+			id: "140B3022F5CE645F"
+			tasks: [{
+				id: "71F66C6DBA4C42AB"
+				type: "kill"
+				entity: "bosses_of_mass_destruction:obsidilith"
+				value: 1L
+			}]
+		}
+		{
+			icon: "adventurez:stone_golem_heart"
+			disable_toast: true
+			x: 1.5d
+			y: -2.0d
+			id: "19223BD799FCFB2E"
+			tasks: [{
+				id: "4FB9F335475696C5"
+				type: "kill"
+				entity: "adventurez:stone_golem"
+				value: 1L
+			}]
+		}
+		{
+			icon: "adventurez:source_stone"
+			disable_toast: true
+			x: 3.5d
+			y: -2.0d
+			id: "6F489721F4261E57"
+			tasks: [{
+				id: "1046971BBD091A59"
+				type: "kill"
+				entity: "adventurez:void_shadow"
+				value: 1L
+			}]
+		}
+		{
+			icon: "soulsweapons:lord_soul_dark"
+			x: -12.5d
+			y: 5.0d
+			id: "08616273709133AC"
+			tasks: [{
+				id: "0EBF68B9943FA4C4"
+				type: "kill"
+				entity: "soulsweapons:draugr_boss"
+				value: 1L
+			}]
+		}
+		{
+			icon: "soulsweapons:essence_of_eventide"
+			x: -12.5d
+			y: 6.0d
+			dependencies: ["08616273709133AC"]
+			id: "2365A8356CEB0745"
+			tasks: [{
+				id: "4324CE105C49BB1E"
+				type: "kill"
+				entity: "soulsweapons:night_shade"
+				value: 1L
+			}]
+		}
+		{
+			icon: "soulsweapons:lord_soul_rose"
+			x: -10.5d
+			y: 5.0d
+			description: [""]
+			id: "32211FA41C16A423"
+			tasks: [{
+				id: "453A3CE1C9FE09FE"
+				type: "kill"
+				entity: "soulsweapons:returning_knight"
+				value: 1L
+			}]
+		}
+		{
+			icon: "soulsweapons:lord_soul_red"
+			x: -8.5d
+			y: 5.0d
+			id: "5D4344050780FFCD"
+			tasks: [{
+				id: "7AD5EFD96A392C20"
+				type: "kill"
+				entity: "soulsweapons:accursed_lord_boss"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "soulsweapons:chaos_crown"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.5d
+			y: 5.0d
+			description: [""]
+			id: "4BC1D85290DBEAF1"
+			tasks: [{
+				id: "2E455F98E83E55BE"
+				type: "kill"
+				entity: "soulsweapons:chaos_monarch"
+				value: 1L
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.5d
+			y: -2.0d
+			id: "00E1259FB509D73D"
+			tasks: [{
+				id: "28CFD13EA85AB245"
+				type: "kill"
+				icon: {
+					id: "adventurez:prime_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "adventurez:the_eye"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "whisperwoods:hirschgeist_skull"
+				Count: 1b
+				tag: {
+					Damage: 0
+					saa1: { }
+				}
+			}
+			disable_toast: true
+			x: -2.0d
+			y: -2.0d
+			id: "392926A2AA742C9A"
+			tasks: [{
+				id: "121D71BD9A691A9E"
+				type: "kill"
+				entity: "whisperwoods:hirschgeist"
+				value: 1L
+			}]
+		}
+		{
+			icon: "botania:gaia_head"
+			disable_toast: true
+			x: -3.0d
+			y: -2.0d
+			id: "4FC5D652D1692BB0"
+			tasks: [{
+				id: "34401A447BA7DE7D"
+				type: "kill"
+				entity: "botania:doppleganger"
+				value: 1L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			id: "515CA9402FF98EC6"
+			tasks: [{
+				id: "5F2E8F193C386748"
+				type: "item"
+				item: "twilightforest:naga_trophy"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["515CA9402FF98EC6"]
+			id: "441465EF04DFB6AB"
+			tasks: [{
+				id: "134D3E989F106B29"
+				type: "item"
+				item: "twilightforest:lich_trophy"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["441465EF04DFB6AB"]
+			id: "552CF29C33D6BC1B"
+			tasks: [{
+				id: "5F888A70BE897E99"
+				type: "item"
+				item: "twilightforest:minoshroom_trophy"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["552CF29C33D6BC1B"]
+			id: "7D134F38F7B7979E"
+			tasks: [{
+				id: "5D4FEFADAF5B3A75"
+				type: "item"
+				item: "twilightforest:hydra_trophy"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["441465EF04DFB6AB"]
+			id: "45E5FD70514490E1"
+			tasks: [{
+				id: "0B793005A60F3C40"
+				type: "item"
+				item: "twilightforest:knight_phantom_trophy"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["45E5FD70514490E1"]
+			id: "13FB98B1625B5F72"
+			tasks: [{
+				id: "416F1A0DE0C208B5"
+				type: "item"
+				item: "twilightforest:ur_ghast_trophy"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["441465EF04DFB6AB"]
+			id: "4ADA6596F2A3AB11"
+			tasks: [{
+				id: "7663FBE4EF2E5324"
+				type: "item"
+				item: "twilightforest:alpha_yeti_trophy"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["4ADA6596F2A3AB11"]
+			id: "2E11CBC3789EAF47"
+			tasks: [{
+				id: "7DC83525056B7CB5"
+				type: "item"
+				item: "twilightforest:snow_queen_trophy"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["441465EF04DFB6AB"]
+			id: "1DBB16C57FF84E5A"
+			tasks: [{
+				id: "7359BA26BBC67A55"
+				type: "item"
+				item: "twilightforest:quest_ram_trophy"
+			}]
+		}
+		{
+			icon: "minecraft:dragon_egg"
+			disable_toast: true
+			x: -1.0d
+			y: -2.0d
+			id: "7BC9EF328769CA36"
+			tasks: [{
+				id: "376ED5637B259948"
+				type: "kill"
+				disable_toast: true
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+		}
+		{
+			icon: "minecraft:nether_star"
+			disable_toast: true
+			x: 0.0d
+			y: -2.0d
+			id: "67DA3672A4085FE7"
+			tasks: [{
+				id: "1B437062091358C3"
+				type: "kill"
+				icon: "minecraft:wither_skeleton_skull"
+				entity: "minecraft:wither"
+				value: 1L
+			}]
+		}
+		{
+			title: "寻找虚空之花"
+			x: -12.5d
+			y: 1.0d
+			dependencies: ["5BB7E2C3AE9231D4"]
+			optional: true
+			id: "44DF529B4C730DE9"
+			tasks: [{
+				id: "103291F274742C71"
+				type: "item"
+				item: "bosses_of_mass_destruction:void_lily"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3FA335E1E592C239"
+				type: "command"
+				auto: "invisible"
+				command: "/locate bosses_of_mass_destruction:void_blossom"
+				player_command: true
+			}]
+		}
+		{
+			title: "寻找地狱之手"
+			x: -10.5d
+			y: 1.0d
+			dependencies: ["5BB7E2C3AE9231D4"]
+			optional: true
+			id: "51EF4E199230F4DB"
+			tasks: [{
+				id: "55F38C372F9A3A33"
+				type: "item"
+				item: "gobber2:gobber2_ingot_nether"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "36A65FAA4FECB610"
+				type: "command"
+				auto: "invisible"
+				command: "/locate bosses_of_mass_destruction:gauntlet_arena"
+				player_command: true
+			}]
+		}
+		{
+			title: "寻找夜巫妖"
+			x: -8.5d
+			y: 1.0d
+			dependencies: ["5BB7E2C3AE9231D4"]
+			optional: true
+			id: "2DF57B17D78E8CA6"
+			tasks: [{
+				id: "360DE5FDD474B029"
+				type: "item"
+				item: "bosses_of_mass_destruction:soul_star"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5F388F5A7BB6F1F6"
+				type: "command"
+				auto: "invisible"
+				command: "/locate bosses_of_mass_destruction:lich_tower"
+				player_command: true
+			}]
+		}
+		{
+			title: "寻找黑曜石之柱"
+			x: -6.5d
+			y: 1.0d
+			dependencies: ["5BB7E2C3AE9231D4"]
+			optional: true
+			id: "0E8D4AE73E04878A"
+			tasks: [{
+				id: "384AF3B16FEB70FF"
+				type: "item"
+				item: "infinity:special_handlingof_glowing_obsidian"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "66C7FD957A3180F6"
+				type: "command"
+				auto: "invisible"
+				command: "/locate bosses_of_mass_destruction:obsidilith_arena"
+				player_command: true
+			}]
+		}
+		{
+			title: "寻找远古英雄"
+			x: -12.5d
+			y: 4.0d
+			dependencies: ["5BB7E2C3AE9231D4"]
+			optional: true
+			can_repeat: true
+			id: "0C943529E09DBE3B"
+			tasks: [{
+				id: "4B6DF8AF5482E46F"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "230C4EDEA36365C0"
+				type: "command"
+				auto: "invisible"
+				command: "/locate soulsweapons:champions_graves"
+				player_command: true
+			}]
+		}
+		{
+			title: "寻找莫德凯撒"
+			x: -10.5d
+			y: 4.0d
+			dependencies: ["5BB7E2C3AE9231D4"]
+			optional: true
+			can_repeat: true
+			id: "41526AD7ED35F51B"
+			tasks: [{
+				id: "1DB3D9C670436F16"
+				type: "item"
+				item: "soulsweapons:lost_soul"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6A690A6C86743BF7"
+				type: "command"
+				auto: "invisible"
+				command: "/locate soulsweapons:cathedral_of_resurrection"
+				player_command: true
+			}]
+		}
+		{
+			title: "寻找亚托克斯"
+			x: -8.5d
+			y: 4.0d
+			dependencies: ["5BB7E2C3AE9231D4"]
+			optional: true
+			id: "3104E810AC894D1A"
+			tasks: [{
+				id: "5DC1487259891C54"
+				type: "item"
+				item: "betternether:nether_ruby"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "175B30E3E0C50C1B"
+				type: "command"
+				auto: "invisible"
+				command: "/locate soulsweapons:decaying_kingdom"
+				player_command: true
+			}]
+		}
+		{
+			title: "寻找类任务的注意事项"
+			icon: "kubejs:nightbreak"
+			x: -10.0d
+			y: -1.25d
+			subtitle: "注意，服务器不能用！"
+			description: [
+				"此界面只是给你一个你需要打的BOSS的列表，不会提供任何的奖励！"
+				""
+				"寻找BOSS结构任务需要在创建存档时开启作弊或是在对局域网开放选项里打开允许作弊，然后创建一个局域网世界才能使用"
+				"==============================================================================================================================================="
+				"{image:kubejs:textures/ftbq/cheat1.png width:200 height:170 align:1}"
+				"{image:kubejs:textures/ftbq/cheat2.png width:600 height:400 align:1}"
+			]
+			size: 2.5d
+			min_width: 600
+			id: "5BB7E2C3AE9231D4"
+			tasks: [{
+				id: "0B005527D4D9A68A"
+				type: "checkmark"
+				title: "注意！"
+			}]
+		}
+		{
+			icon: {
+				id: "twilightforest:giant_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: 1.5d
+			dependencies: [
+				"7D134F38F7B7979E"
+				"13FB98B1625B5F72"
+				"2E11CBC3789EAF47"
+			]
+			id: "517BE4DA25D1611B"
+			tasks: [
+				{
+					id: "64758488C662BB76"
+					type: "kill"
+					entity: "twilightforest:armored_giant"
+					value: 1L
+				}
+				{
+					id: "3719960499FAFFBE"
+					type: "kill"
+					entity: "twilightforest:giant_miner"
+					value: 1L
+				}
+			]
+		}
+		{
+			icon: "soulsweapons:lord_soul_white"
+			x: -10.5d
+			y: 7.0d
+			dependencies: [
+				"32211FA41C16A423"
+				"2365A8356CEB0745"
+			]
+			id: "2A1768720FA30620"
+			tasks: [{
+				id: "042BAF6BE0586510"
+				type: "kill"
+				entity: "soulsweapons:moonknight"
+				value: 1L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

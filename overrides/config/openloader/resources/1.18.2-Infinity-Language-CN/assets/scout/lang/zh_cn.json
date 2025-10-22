@@ -1,0 +1,11 @@
+{
+  "itemGroup.scout.itemgroup": "拓容随身包",
+  "item.scout.tanned_leather": "鞣制皮革",
+  "item.scout.satchel_strap": "挎包带",
+  "item.scout.satchel": "挎包",
+  "item.scout.upgraded_satchel": "挎包升级",
+  "item.scout.pouch": "荷包",
+  "item.scout.upgraded_pouch": "荷包升级",
+  "trinkets.slot.legs.pouch": "荷包",
+  "tooltip.scout.slots": "保存 %d 物品"
+}

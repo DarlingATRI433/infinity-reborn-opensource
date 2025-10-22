@@ -1,0 +1,31 @@
+{
+	id: "50B517D4B2FF7057"
+	group: ""
+	order_index: 4
+	filename: "50B517D4B2FF7057"
+	title: "难度模式介绍"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "难度介绍"
+		icon: "kubejs:difficulty_changer"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "使用难度切换器切换难度"
+		description: [
+			"经典难度下怪物会概率掉落额外的铜币,会掉落三种稀有度的卡包,有概率掉落4种原版矿物"
+			""
+			"专家难度下会概率掉落额外的银币和稀有度更高的两种卡包,boss有概率会掉模组矿物,怪物有概率掉神器碎片,怪物有概率掉落空白之心,箱子里有概率出现额外的附魔书,箱子里有概率出现额外的救赎之心"
+			""
+			"大师难度下凋零骷髅必掉头,怪物概率掉落额外金币,概率掉落神话卡包,boss必定掉落模组矿物(数量更多),怪物有概率掉落神器零件,箱子里有概率出现额外更强的附魔书"
+		]
+		size: 4.0d
+		id: "738EC65A3C5D8366"
+		tasks: [{
+			id: "02E9C3FBC2704232"
+			type: "checkmark"
+			title: "经典及以上伤害不够的话会导致给怪物回血,请注意"
+		}]
+	}]
+	quest_links: [ ]
+}

@@ -1,0 +1,19 @@
+{
+    "block.productivevillagers.workstation_depot": "工作站仓库",
+    "tooltip.productivevillagers.job_repair_tools": "维修工具",
+    "tooltip.productivevillagers.job_repair_weapons": "维修武器",
+    "tooltip.productivevillagers.job_repair_heavy_armor": "维修金属护甲",
+    "tooltip.productivevillagers.job_repair_leather_armor": "修理皮甲，处理成组的腐肉，提供皮革",
+  
+    "tooltip.productivevillagers.job_shear": "剪羊毛",
+    "tooltip.productivevillagers.job_meat_slice": "收割生物",
+    "tooltip.productivevillagers.job_farm": "收获庄稼",
+    "tooltip.productivevillagers.job_fish": "在水域附近捕鱼",
+  
+    "tooltip.productivevillagers.job_heal_aura": "治疗附近的村民或玩家",
+    "tooltip.productivevillagers.job_process_stack": "处理多余的开采废料",
+    "tooltip.productivevillagers.job_repair_bows": "维修弓和弩",
+    "tooltip.productivevillagers.job_mine": "开采附近的矿石",
+    "tooltip.productivevillagers.job_chop": "砍伐附近树木",
+    "tooltip.productivevillagers.job_enchant": "附魔书"
+  }

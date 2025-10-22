@@ -1,0 +1,77 @@
+{
+	id: "47F81EE1C9EE8615"
+	group: "5D8C97B73DA1279B"
+	order_index: 1
+	filename: "47F81EE1C9EE8615"
+	title: "饰品商店"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "购买奇异饰品"
+			icon: "artifacts:feral_claws"
+			disable_toast: true
+			x: -2.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 2.0d
+			can_repeat: true
+			id: "542F1F70D5491B84"
+			tasks: [{
+				id: "12FECA4B9117CCDC"
+				type: "item"
+				disable_toast: true
+				item: {
+					id: "numismatic-overhaul:gold_coin"
+					Count: 1b
+					tag: { }
+				}
+				count: 5L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "03ED532CBE07D26B"
+				type: "random"
+				team_reward: false
+				auto: "no_toast"
+				table_id: 1552600754727581119L
+			}]
+		}
+		{
+			title: "购买飞升之戒"
+			icon: "ringsofascension:ring_flight"
+			disable_toast: true
+			x: 0.5d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 2.0d
+			can_repeat: true
+			id: "311E19EE7CA783E0"
+			tasks: [{
+				id: "39BABAB7A7C2D1E6"
+				type: "item"
+				disable_toast: true
+				item: {
+					id: "numismatic-overhaul:gold_coin"
+					Count: 1b
+					tag: { }
+				}
+				count: 3L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6984778085A59601"
+				type: "random"
+				team_reward: false
+				auto: "enabled"
+				table_id: 5206663203530399561L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

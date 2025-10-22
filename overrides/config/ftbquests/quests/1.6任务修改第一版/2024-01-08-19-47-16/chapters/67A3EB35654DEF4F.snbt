@@ -1,0 +1,106 @@
+{
+	id: "67A3EB35654DEF4F"
+	group: "2197A2D4484C1345"
+	order_index: 0
+	filename: "67A3EB35654DEF4F"
+	title: "无限支配之剑"
+	icon: {
+		id: "kubejs:infinity_sword"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "超越无极之剑"
+			x: 0.0d
+			y: 0.0d
+			description: ["游戏结束！"]
+			dependencies: ["027AAA6A3553F7DB"]
+			hide: true
+			size: 3.0d
+			id: "3E28E364C078C67A"
+			tasks: [{
+				id: "5708C7B7DF45CB62"
+				type: "item"
+				item: {
+					id: "kubejs:infinity_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5724E329B2E2D65C"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 5136761027295037695L
+				}
+				{
+					id: "20C990A4B1741686"
+					type: "item"
+					item: "kubejs:nightbreak"
+				}
+			]
+		}
+		{
+			title: "这......简直不可能!"
+			x: 0.0d
+			y: 2.5d
+			dependencies: [
+				"756E510EB54A40A9"
+				"348DB14877F54235"
+				"1D7B20530FC2F4D8"
+				"076CC35D136A2EAE"
+				"3022F8914C5B5968"
+				"0B7315F6F0EE99FC"
+				"0006BDAF2FCDED74"
+				"027AAA6A3553F7DB"
+				"506DA1445B018357"
+				"2412CB977AEF6F07"
+				"54A143AC00492D8E"
+			]
+			hide: true
+			id: "20AF7DEA67B301FD"
+			tasks: [{
+				id: "75907DBD4E4D78D4"
+				type: "item"
+				item: {
+					id: "kubejs:infinity_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "12751D3022668FB1"
+					type: "command"
+					team_reward: false
+					auto: "enabled"
+					command: "/say hi, @p!,这简直不可思议,你居然真的做完了?如果你真的是没通过作弊等方法达到这个的话,可以联系作者给你定制一份物品"
+					player_command: false
+				}
+				{
+					id: "22E876B696A8D1ED"
+					type: "item"
+					item: {
+						id: "kubejs:infinity_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}
